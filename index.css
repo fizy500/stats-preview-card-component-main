@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.wide{
+    width:min(80%,70rem);
+}
+.img-div{
+    background-image:linear-gradient(rgba(170, 92, 219, 0.5),rgba(170, 92, 219, 0.5)),url('images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+@media screen and (max-width:734px){
+    .wide{
+        flex-wrap: wrap; 
+    }
+    .img-div{
+        height:50vh;
+        background-image:linear-gradient(rgba(170, 92, 219, 0.5),rgba(170, 92, 219, 0.5)),url('images/image-header-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: none;
+        border-bottom-left-radius:none ;
+    }
+    .text{
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .stats{
+        flex-direction: column;
+    }
+}
